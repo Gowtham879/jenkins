@@ -10,7 +10,7 @@ import io.cucumber.testng.CucumberOptions;
 		glue="StepsDefination",
 		tags="@tag3",
 		monochrome=true,
-	    plugin={"pretty","io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm"}
+	    plugin={"pretty","io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm","json:target/cucumber.json"}
 		)
 public class AllRunner extends AbstractTestNGCucumberTests{
 	
