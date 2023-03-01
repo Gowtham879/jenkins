@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Mar 01 11:59:06 IST 2023</td>
+<td>Started on:</td><td>Wed Mar 01 17:23:06 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>200 seconds (200522 ms)</td>
+<tr><td>Total time:</td><td>159 seconds (159221 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -77,8 +77,71 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='TestRunner.AllRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.AllRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to book online Traintickets", "login to the OrangeHRM"</td>
-<td></td>
-<td>200</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Sampark Kranti&apos;]/../../../following-sibling::div//span[text()=&apos;Tatkal&apos;]/../../../following-sibling::div//span[text()=&apos;AC 2 tier&apos;]/../../../../../../../../following-sibling::div//button[text()=&apos;Book Now&apos;]&quot;}
+  (Session info: chrome=110.0.5481.178)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [279a20db544066493bb8d2629dc17b86, findElement {using=xpath, value=//div[text()=&apos;Sampark Kranti&apos;]/../../../following-sibling::div//span[text()=&apos;Tatkal&apos;]/../../../following-sibling::div//span[text()=&apos;AC 2 tier&apos;]/../../../../../../../../following-sibling::div//button[text()=&apos;Book Now&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\gowtham.n\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:53276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53276/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 279a20db544066493bb8d2629dc17b86
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at SeleniumCommands.AllCommands.getWebElementUsingXapth(AllCommands.java:35)
+	at SeleniumCommands.AllCommands.click(AllCommands.java:46)
+	at Train_pageObjects.SeatBookinPage.Coach(SeatBookinPage.java:12)
+	at Train_pageObjects.SeatBookinPage.booking(SeatBookinPage.java:21)
+	at StepsDefination.mainSteps.select_the_coach_and_book_click_on_continue(mainSteps.java:121)
+	at ✽.Select the Coach and Book click on continue(file:///C:/Users/gowtham.n/eclipse-workspace/EayMyTrip/src/test/feature/mainScenario.feature:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace948422615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace948422615'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Sampark Kranti&apos;]/../../../following-sibling::div//span[text()=&apos;Tatkal&apos;]/../../../following-sibling::div//span[text()=&apos;AC 2 tier&apos;]/../../../../../../../../following-sibling::div//button[text()=&apos;Book Now&apos;]&quot;}
+  (Session info: chrome=110.0.5481.178)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [279a20db544066493bb8d2629dc17b86, findElement {using=xpath, value=//div[text()=&apos;Sampark Kranti&apos;]/../../../following-sibling::div//span[text()=&apos;Tatkal&apos;]/../../../following-sibling::div//span[text()=&apos;AC 2 tier&apos;]/../../../../../../../../following-sibling::div//button[text()=&apos;Book Now&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\gowtham.n\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:53276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53276/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 279a20db544066493bb8d2629dc17b86
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at SeleniumCommands.AllCommands.getWebElementUsingXapth(AllCommands.java:35)
+	at SeleniumCommands.AllCommands.click(AllCommands.java:46)
+	at Train_pageObjects.SeatBookinPage.Coach(SeatBookinPage.java:12)
+	at Train_pageObjects.SeatBookinPage.booking(SeatBookinPage.java:21)
+	at StepsDefination.mainSteps.select_the_coach_and_book_click_on_continue(mainSteps.java:121)
+	at ✽.Select the Coach and Book click on continue(file:///C:/Users/gowtham.n/eclipse-workspace/EayMyTrip/src/test/feature/mainScenario.feature:31)
+</pre></div></td>
+<td>158</td>
 <td>TestRunner.AllRunner@3c9c0d96</td></tr>
 </table><p>
 </body>
