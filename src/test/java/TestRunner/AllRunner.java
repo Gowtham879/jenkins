@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		features="src/test/feature/mainScenario.feature",
 		glue="StepsDefination",
-		tags="@tag2",
+		tags="@tag1 or @tag2",
 		monochrome=true,
 	    plugin={"pretty","io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm","json:target/cucumber.json"}
 		)
