@@ -22,9 +22,11 @@ public class FlightTravellers extends AllCommands {
 	private void search() {
 		String xpath="//button[text()=' Search']";
 		this.click(xpath);
+		
 	}
 	private void booknow() {
 		String xpath="//div[text()='Book Now']";
+	//	this.explicit(xpath);
 		this.click(xpath);
 	}
 	private void contin() {
@@ -41,7 +43,7 @@ public class FlightTravellers extends AllCommands {
 		this.infant();
 		this.delayScript(2);
 		this.search();
-		this.delayScript(2);
+	    this.delayScript(4);
 		this.booknow();
 		this.delayScript(2);
 		this.contin();

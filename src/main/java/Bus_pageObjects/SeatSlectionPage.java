@@ -34,17 +34,17 @@ private void contin() {
 public void SeatSelection() {
 	this.delayScript(2);
 	this.selectseats();
-	this.delayScript(2);
+	this.delayScript(4);
 	this.boardingselect();
-	this.delayScript(2);
+	this.delayScript(4);
 	this.boardingpoint();
-	this.delayScript(2);
+	this.delayScript(4);
 	this.dropingselect();
-	this.delayScript(2);
+	this.delayScript(4);
 	this.dropingpint();
-	this.delayScript(2);
+	this.delayScript(4);
 	this.seat();
-	this.delayScript(2);
+	this.delayScript(4);
 	this.contin();
 }
 }

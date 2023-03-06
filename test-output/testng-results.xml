@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-01T17:23:06 IST" name="Default suite" finished-at="2023-03-01T17:25:45 IST" duration-ms="159221">
+  <suite started-at="2023-03-06T10:35:00 IST" name="Default suite" finished-at="2023-03-06T10:37:12 IST" duration-ms="131749">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.AllRunner@3c9c0d96]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.AllRunner@7749bf93]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-03-01T17:23:06 IST" name="Default test" finished-at="2023-03-01T17:25:45 IST" duration-ms="159221">
+    <test started-at="2023-03-06T10:35:00 IST" name="Default test" finished-at="2023-03-06T10:37:12 IST" duration-ms="131749">
       <class name="TestRunner.AllRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner.AllRunner@3c9c0d96]" started-at="2023-03-01T17:23:06 IST" name="setUpClass" finished-at="2023-03-01T17:23:06 IST" duration-ms="412" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner.AllRunner@7749bf93]" started-at="2023-03-06T10:35:00 IST" name="setUpClass" finished-at="2023-03-06T10:35:01 IST" duration-ms="382" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.AllRunner@3c9c0d96]" started-at="2023-03-01T17:23:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-01T17:25:45 IST" duration-ms="158616" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.AllRunner@7749bf93]" started-at="2023-03-06T10:35:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-06T10:36:00 IST" duration-ms="59571" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User is able to book online Traintickets"]]>
+                <![CDATA["User ia able to Book the Flight in EasyTrip Website"]]>
               </value>
             </param>
             <param index="1">
@@ -27,57 +27,26 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Sampark Kranti']/../../../following-sibling::div//span[text()='Tatkal']/../../../following-sibling::div//span[text()='AC 2 tier']/../../../../../../../../following-sibling::div//button[text()='Book Now']"}
-  (Session info: chrome=110.0.5481.178)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [279a20db544066493bb8d2629dc17b86, findElement {using=xpath, value=//div[text()='Sampark Kranti']/../../../following-sibling::div//span[text()='Tatkal']/../../../following-sibling::div//span[text()='AC 2 tier']/../../../../../../../../following-sibling::div//button[text()='Book Now']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\gowtham.n\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:53276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53276/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 279a20db544066493bb8d2629dc17b86]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Sampark Kranti']/../../../following-sibling::div//span[text()='Tatkal']/../../../following-sibling::div//span[text()='AC 2 tier']/../../../../../../../../following-sibling::div//button[text()='Book Now']"}
-  (Session info: chrome=110.0.5481.178)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [279a20db544066493bb8d2629dc17b86, findElement {using=xpath, value=//div[text()='Sampark Kranti']/../../../following-sibling::div//span[text()='Tatkal']/../../../following-sibling::div//span[text()='AC 2 tier']/../../../../../../../../following-sibling::div//button[text()='Book Now']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\gowtham.n\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:53276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53276/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 279a20db544066493bb8d2629dc17b86
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-at SeleniumCommands.AllCommands.getWebElementUsingXapth(AllCommands.java:35)
-at SeleniumCommands.AllCommands.click(AllCommands.java:46)
-at Train_pageObjects.SeatBookinPage.Coach(SeatBookinPage.java:12)
-at Train_pageObjects.SeatBookinPage.booking(SeatBookinPage.java:21)
-at StepsDefination.mainSteps.select_the_coach_and_book_click_on_continue(mainSteps.java:121)
-at ✽.Select the Coach and Book click on continue(file:///C:/Users/gowtham.n/eclipse-workspace/EayMyTrip/src/test/feature/mainScenario.feature:31)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.AllRunner@3c9c0d96]" started-at="2023-03-01T17:25:45 IST" name="tearDownClass" finished-at="2023-03-01T17:25:45 IST" duration-ms="122" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.AllRunner@7749bf93]" started-at="2023-03-06T10:36:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-06T10:37:12 IST" duration-ms="71487" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is able to Book online Bus tickets on EasymyTrip"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["login to the OrangeHRM"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.AllRunner@7749bf93]" started-at="2023-03-06T10:37:12 IST" name="tearDownClass" finished-at="2023-03-06T10:37:12 IST" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

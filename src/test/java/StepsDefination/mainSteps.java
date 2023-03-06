@@ -98,6 +98,7 @@ public class mainSteps extends AllCommands {
 
 	@When("slecect the bus and BoardingPoint and DropingPoint click on Continue")
 	public void slecect_the_bus_and_boarding_point_and_droping_point_click_on_continue() {
+		this.delayScript(5);
 	   busseat.SeatSelection();
 	}
 
