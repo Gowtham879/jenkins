@@ -77,7 +77,7 @@ public class AllCommands {
 	}
 
  public void explicit(String xpath) {
-	 WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(5));
+	 WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(50));
 	 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
 }
 }

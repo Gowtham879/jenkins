@@ -12,7 +12,7 @@ private void boardingselect() {
 	this.click(xpath);
 }
 private void boardingpoint() {
-	String xpath="//label[text()='Select a Boarding Point']/.. //a[text()='---Select---']/../descendant::a[contains(.,' Majestic Ananda')]";
+	String xpath="//label[text()='Select a Boarding Point']/.. //a[text()='---Select---']/../descendant::a[contains(.,' Kamath Work Shop')]";
 	this.click(xpath);
 }
 private void dropingselect() {
@@ -24,7 +24,7 @@ private void dropingpint() {
 	this.click(xpath);
 }
 private void seat() {
-	String xpath="//div[text()='11U']";
+	String xpath="//div[text()='A5']";
 	this.click(xpath);
 }
 private void contin() {
