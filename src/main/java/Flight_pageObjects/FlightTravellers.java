@@ -45,7 +45,7 @@ public class FlightTravellers extends AllCommands {
 		this.search();
 	    this.delayScript(5);
 		this.booknow();
-		this.delayScript(2);
+		this.delayScript(4);
 		this.contin();
 	}
 
